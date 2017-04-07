@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Opera</title>
+<script type="text/javascript">
+    <!--
+    
+        function displayDate()
+        {
+            var today = new Date("january 12, 2017");
+            todayString = today.toDateString(); today.toLocaleString();
+        
+            var daysToKidsCamp = new Date("March 23, 2017");
+            var daysToGo = daysToKidsCamp.getTime() - today.getTime();
+            var days = Math.ceil(daysToGo / (1000*60*60*24));
+        
+            displayCountDown.innerHTML = "<p style='font-size:12pt;text-align:center;'>Today is "+todayString+". The Grand Reopening of the Denver Opera house is in "+days+" days</p>"
+        }
+    
+        function copyRight(){
+                
+                today = new Date();
+                var lastModeDate = document.lastModified;
+                var lastModeDate = lastModeDate.substring(0,10);
+                var year = today.getFullYear();
+                var message = "(C) Copyright Denver Opera House "+year+".";
+                var modifiedMessage = " This document was last modified "+lastModeDate+"" ;
+            
+                //write the message to the status bar
+                window.status = message + modifiedMessage;
+        
+        }
+        function scrollColor(){
+                styleObject = document.getElementsByTagName('html')[0].style;
+                styleObject.scrollFaceColor="#603520";
+                styleObject.scrollArrowColor="#bf853f";
+                styleObject.scrollTrackColor="#ffffff";
+                styleObject.scrollShadowColor="#a66030";            
+        }
+        function footerMsg(){
+                var address = "The Denver Opera House<br>900 Market Street<br>Denver, CO 80205"
+                footerText.innerHTML = address;
+        }
+    -->
+</script>
+<style type="text/css">
+<!--
+.center {
+	text-align:center;
+    }
+	
+.titleline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+.blockcenter {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 3px;
+}
+
+.colHead {
+    font-size: 12 pt;
+	font-family: Arial, Helvetica, MS San Serif;
+	font-weight: bold;
+}
+
+.footertext {
+	font-size: 8pt;
+	color: #604020;
+}
+-->
+</style>
+</head>
+<body onload="copyRight();displayDate();scrollColor();footerMsg();">
+<p class="center"><img src="images\extend9-1banner.jpg" alt="Denver Opera Banner" width="696" height="120"></p>
+        
+<p class="center"><img src="images\hrimg-opera.jpg" alt="red divider" width="800" height="4" /></p>
+<div id="displayCountDown"></div>
+<p class="center"><img src="images\hrimg-opera.jpg" alt="red divider" width="800" height="4" /></p>
+<p class="center"><span class="titleline"> Come for the atmosphere... Stay for the music!</span></p>
+<div class="blockcenter">
+<p>Welcome to the spectacular Denver Opera House. The Denver Opera House was built in 1882 and is a  Western cultural institution. Our interior takes you back in time, as you enter our newly restored Grand Lobby with many of its original Victorian features. Try to imagine the patrons of the late 19th century streaming into the theater, eager to hear the music and words of Puccini, Rossini, Mozart, Bizet, and Verdi. Come visit Denver's oldest icon of the arts and see a marvelous example of 19th-century Victorian architecture, featuring leather stenciling, an ornate pressed tin ceiling, and a beautiful proscenium stage.</p>
+<p>Besides a beautiful theater, the Denver Opera House has an art gallery, a gift shop, and the Art's Cafe.  Our art gallery presents eight to 10 exhibitions annually of well-known local, national, and international artists and artisans. After a visit to the art gallery, visit the gift shop, where one can purchase original artwork ranging from paintings, prints, and original hand-crafted pottery, glass, and jewelry. The Art's Cafe is open to the public and is a gathering place where musicians and performers enjoy a break between rehearsals, artists meet to discuss ideas, and friends gather just to relax.</p>
+</div>
+<p></p>
+<table>
+  <tr>
+    <th class="colHead">Art Gallery Hours</th>
+    <th class="colHead">Gift Shop Hours</th>
+    <th class="colHead">Art's Cafe Hours</th>
+  </tr>
+  <tr>
+    <td>Monday through Saturday <br />
+      10:00 a.m. to 6:00 p.m. <br />
+      Sunday<br /> 
+      Noon to 5:00 p.m.
+    </td>
+    <td>Monday through Saturday <br />
+      11:00 a.m. to 6:30 p.m.<br />
+      Sunday<br />
+      Noon to 5:30 p.m.
+    </td>
+    <td>Sunday through Thursday <br />
+      10:00 a.m. to 8:00 p.m.<br />
+      Friday and Saturday<br />
+      11:00 a.m. to 11 p.m. 
+    </td>
+  </tr>
+</table>
+<p></p>
+    
+<div id="displayCopyRight">
+</div>
+    <footer id="footerText"></footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body    {  
+            font-family: Centaur, "Century Gothic", Arial;
+            font-size: 14pt; 
+        }
+
+p    { margin-left: 10px;
+        margin-right: 10px;
+        }
+
+a    { text-decoration: none;
+        color: black}
+
+
+
+table{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: #545859;
+        border-style: ridge;
+        border-width: 10px;
+        }
+.menu{text-align: center;
+        width: 60%}
+.menuicon{ width: 23%}
+.menupipe{ width: 1%}
+
+th  { color: white;
+        background-color: #757775;}
+
+tr.stripe   {background-color: #d8d8ce;}
+tr.bolder   {font-weight: bold;}
+caption     {caption-side: bottom;
+                font-size: italic;}

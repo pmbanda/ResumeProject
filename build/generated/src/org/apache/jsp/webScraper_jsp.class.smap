@@ -1,0 +1,16 @@
+SMAP
+webscraper_jsp.java
+JSP
+*S JSP
+*F
++ 0 webscraper.jsp
+webscraper.jsp
+*L
+5,53:45
+59,4:100
+62:104
+63:105,3
+64:108
+64,3:109
+66,8:112
+*E

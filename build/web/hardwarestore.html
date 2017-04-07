@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<title>Hardware-Store</title>
+    <script type="text/javascript">
+    <!--Hide from old browsers
+    function newScroll() {
+        styleObject=document.getElementsByTagName('html')[0].style
+        styleObject.scrollbarFaceColor="#191a1f"
+        styleObject.scrollbarTrackColor="#e4e5e8"
+    }
+
+    function todayDate() {
+        var today = new Date("january 12, 2017");
+        todayString = today.toDateString();
+        today.toLocaleString();
+    
+        var memorialDay = new Date("June 23, 2017");
+        var daysToGo = memorialDay.getTime() - today.getTime();
+        var days = Math.ceil(daysToGo / (1000*60*60*24));
+
+
+        displayDate.innerHTML = "<p style='font-size:12pt;text-align:center;'>Today is "+todayString+". Only "+days+"  days until Frank's Fix-it Memorial Day Sale.</p>"
+    }
+
+    function copyRight() {
+        today = new Date();
+        var lastModeDate = document.lastModified;
+        var lastModeDate = lastModeDate.substring(0,10);
+        var year = today.getFullYear();
+        
+        dateModified.innerHTML = "<p>The URL of this document is "+document.URL+" <br/> Copyright Frank's Fix-t Hardware. This document was last modified "+lastModeDate+".</p>"
+    }
+
+    //-->
+    </script>
+<style type="text/css">
+
+.center {
+	text-align:center;
+    }
+
+td { 
+   padding: 5px;
+}
+.cell-width {
+	width: 50%;
+}
+
+table.width {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right; 
+   } 
+	
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #5f6065;
+}
+
+.r_saletext {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #666;
+	text-align:right;
+}
+
+.l_saletext {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #666;
+	text-align:left;
+}
+
+#alignright {
+	text-align: right;
+}
+</style>
+</head>
+<body onLoad="newScroll();todayDate();copyRight();">
+<div class="center">
+<p><img src="images\make9-1banner.jpg" width="700" height="120" alt="Frank's Fix-it banner"></p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:bold;">Frank's Fix-it Hardware</p>
+<img src="images\img-metaldivider.jpg" width="700" height="5" alt="divider">
+    
+<div id="displayDate" class="center">
+</div>
+    
+<img src="images\img-metaldivider.jpg" width="700" height="5" alt="divider">
+</div>
+<table class="width">
+  <tr>
+    <td colspan="2">
+    <p class="header1" style="font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size:12pt">Frank's Fix-it Hardware</p>
+    <p>Frank's Fix-it Hardware has been a member of the greater Anaheim and Fullerton community for over fifty years, with four stores. Our Anaheim store, near Disneyland, is open from 6 a.m. to midnight. Monday through Saturday, and 9 a.m. to 9 p.m. on Sunday for those emergency repairs that materialize when you least expect them. Our other locations are open seven days a week from 8 a.m. to 9 p.m.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p class="header1" style="font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size:12pt">Fix-it Membership Club</p>
+    <p>Become a member of our Fix-it Membership Club. Every $250 in purchases earns you $10 in Fix-it bucks, which can be applied to any item, including closeout and sale items. Sorry, the only exception is special orders, due to manufacturers limitations.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="center"><span style="font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:bold;">This week's specials</span></td>
+  </tr>
+  <tr>
+    <td class="r_saletext">Screw Driver Set 25% Off</td>
+    <td class="l_saletext">Free Drill Bit Sharpening </td>
+  </tr>
+  <tr>
+    <td id="alignright"><img src="images\make9-1toolset1.jpg" alt="screw driver set" width="270" height="258"></td>
+    <td><img src="images\make9-1drillbits.jpg" width="272" height="256" alt="drill bits"></td>
+  </tr>
+</table>
+    
+<div id="dateModified">
+</div>
+    
+</body>
+</html>

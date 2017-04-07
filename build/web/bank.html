@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<title>Bank </title>
+<script>
+    <!--
+        //message to be displayed
+         var concreteMsg = " ** The higher your monthly payments, the quicker you can pay off your dept. **"
+        
+        //The beginning position for the subscript
+        var startPosition = 0
+        
+    function textMsg()
+    {
+        //assign the value of the message to the text box
+        msgForm.messageBox.value = concreteMsg.substring(startPosition, concreteMsg.length) + concreteMsg.substring(0,startPosition)
+        
+        //increment the position of the start index
+        startPosition += 1
+        
+        //assign zero to the start position of the subscript if the message length is exceeded
+        if(startPosition > concreteMsg.length)
+        {
+                startPosition = 0
+        }
+        
+        //set timeout for the message scroll text
+        window.setTimeout("textMsg()", 200)
+    }
+    
+    function validate()
+    {
+        //assign the values in text box to the variables
+        var creditCardDept = CreditPayOff.debtAmt.value
+        var interest = CreditPayOff.interestRate.value
+        var monthlyPayments = CreditPayOff.monPmt.value
+
+        //convert the number to a decimal value
+        creditCardDept = parseFloat(creditCardDept)
+        interest = parseFloat(interest)
+        monthlyPayments = parseInt(monthlyPayments, 10)
+        
+        //error message if the credit dept entry is less than one and not a number
+        if( isNaN(creditCardDept) || creditCardDept < 1)
+        {
+            //assign focus and null to the text box
+            alert("Please enter the correct value for Credit Card Debt")
+            CreditPayOff.debtAmt.value = ""
+            CreditPayOff.debtAmt.focus()
+        }
+        else
+        {
+            //error message if the interest rate entry is less than one and not a number
+            if( isNaN(interest) || interest < 1)
+            {
+                //assign focus and null to the text box
+                alert("Please enter the correct value for interest Rate")
+                CreditPayOff.interestRate.value = ""
+                CreditPayOff.interestRate.focus()
+            }
+            else
+            {
+                //error message if the monthly Payment entry is less than one and not a number
+                if( isNaN(monthlyPayments) || monthlyPayments < 1)
+                {
+                    //assign focus and null to the text box
+                    alert("Please enter the correct value for monthly payments")
+                    CreditPayOff.monPmt.value = ""
+                    CreditPayOff.monPmt.focus()
+                }
+                else
+                {
+                    //call the method to calculate the number of months to make the payments
+                    payment = monthlyPmt(creditCardDept, interest, monthlyPayments)
+                    CreditPayOff.NPER.value = payment.toString() + " months"
+                }
+                   
+            }
+        }           
+    }
+    
+    function monthlyPmt(loan, rate, pmt)
+    {
+        //obtain the rate percentage
+        var percentRate = rate / 100
+        //deternine the months in a year
+        var monthInYear = 12
+        //determine the total monthly patments
+        var overallMonthlyPayments = (Math.log(pmt) - Math.log(pmt - (loan * percentRate) / monthInYear)) / Math.log(1 + percentRate / monthInYear) 
+        
+        return overallMonthlyPayments.toFixed(0)//display the number of months as an integer 
+    }
+    
+    
+    function popUpWindow()
+    {
+        //display a pop up window
+        window.open("bankannounce.html","Announcement","width=600,height=390")
+    }
+    
+    function lastModifiedMsg()
+    {
+        //today = new Date();
+        var lastModeDate = document.lastModified;
+        //obtain only the date instance
+        var lastModeDate = lastModeDate.substring(0,10);
+        
+        lastDate.innerHTML = "<p>This document was last modified "+lastModeDate+"</p>"
+    }
+    
+    -->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(lab10-3background.jpg);
+}
+
+.headingline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #900;
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align:center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.block {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+-->
+</style>
+</head>
+<body onload="textMsg();lastModifiedMsg();popUpWindow()">
+<p class="align-center"><img src="images\lab10-3banner.jpg" width="750" height="120" alt="banner"></p>
+
+    <form id="msgForm" class="align-center">
+        <div>
+            <input name="messageBox" type="text" id="messageBox">
+        </div>
+    </form>
+
+    
+<p class="headingline">Pay off your credit card debt</p>
+<p class="block"><strong>Directions: </strong>Enter a the amount of debt without commas, press the tab key, enter the APR Interest rate, and press the tab key. Enter the monthly payment you make. Note: most credit cards caclulate a miminum monthly payment of 4% of the balance.</p>
+<form id="CreditPayOff">
+    <table>
+        <tr>
+           <td class="align-right">
+               <label for="debAmt"><span style="color:#cc0000">*</span><strong>Amount of Credit Card Debt:</strong></label>
+           </td>
+          <td><input name="debtAmt" type="text" id="debAmt" size="9"></td>
+        </tr>
+        <tr>
+          <td class="align-right">
+             <label for="interestRate"><span style="color:#cc0000">*</span><strong>Interest Rate (as 9.9%):</strong></label>
+          </td>
+          <td>
+              <input name="interestRate" type="text" id="interestRate" size="9">
+            </td>
+        </tr>
+        <tr>
+          <td class="align-right">
+             <label for="monPmt"><span style="color:#cc0000">*</span><strong>Monthly Payments:</strong></label>
+          </td>
+          <td>
+             <input name="monPmt" type="text" id="monPmt" size="9">
+          </td>
+        </tr>
+        <tr>
+           <td class="align-right">
+            <input name="button" type="button" value="Calculate" onclick="validate()">
+	       </td>
+           <td>
+             <input name="Reset" type="reset">
+		   </td>
+        </tr>
+        <tr>
+           <td class="align-right">
+              <span style="font-weight:bolder">Months to Payoff:</span>
+           </td>
+          <td><input type="text" name="NPER" id="NPER" value=" " size="12"></td>
+        </tr>
+  </table>
+  <p class="align-center"><span style="color:#cc0000; font-size:12px">* Indicates a required field.</span></p>
+</form>
+    
+<div id="lastDate" class="align-left" style="margin-left:25%">
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<title>Kids-Camp</title>
+<script type="text/javascript">
+    <!--
+        function countDown()
+        {
+            var today = new Date("january 12, 2017");
+            todayString = today.toDateString(); 
+            today.toLocaleString();
+        
+            var daysToKidsCamp = new Date("June 23, 2017");
+            var daysToGo = daysToKidsCamp.getTime() - today.getTime();
+            var days = Math.ceil(daysToGo / (1000*60*60*24));
+        
+            displayCountDown.innerHTML = "<p style='font-size:12pt;font-family:helvetica;'>Today is "+todayString+". Only "+days+
+            " days until the beginning of kids camp</p>"
+        }
+        function copyRight(){
+                today = new Date();
+                var lastModeDate = document.lastModified;
+                var lastModeDate = lastModeDate.substring(0,10);
+                var year = today.getFullYear();
+                displayCopyRight.innerHTML = "<p>The URL of this document is "+document.URL+" <br/>Copyright Kids Kamp --&copy; "+year+" <br/> This document was last modified "+lastModeDate+".</p>";
+        }
+    -->
+</script>
+<style type="text/css">
+hr {
+	color:#006633;
+	width:600px;
+	height: 5px;
+	}
+	
+.center {
+	text-align:center;
+    }
+
+table {
+	margin-left:15%;
+	margin-right:15%;
+    }
+.cell-width {
+	width: 50%;
+}
+	
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right; 
+   } 
+	
+.mainheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #A16B36;
+}
+</style>
+</head>
+<body onload="countDown();copyRight();">
+<div class="center">
+<p><img src="images\apply9-1banner.jpg" width="625" height="120" alt="kids kamp banner" style="background-color: #a16b36"></p>
+<p class="mainheader" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold;">Kids Kamp Summer 2014</p>
+<img src="images\hrimg-summercamp.jpg" width="750" height="5" alt="divider">
+
+    <div id="displayCountDown">
+    </div>
+<img src="images\hrimg-summercamp.jpg" width="750" height="5" alt="divider"> </div>
+<table>
+  <tr>
+    <td>
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">June Opening</p>
+    <p>The Kansas City Kids' Klub opens their summer Kids' Kamp June 23rd. This year, Kids' Kamp will have three different offerings this summer.</p>
+     </td>
+  </tr>
+  <tr>
+    <td>
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Tots -- Day Camp</p>
+    <p>Tots must be in either first or second grade. Camp runs from 7:30 a.m. to 4:30 p.m. For an additional fee, a bus will pick up kids at traditional school bus routes. Students can attend the daily camp for one, two, or three weeks. Activities will vary each week. Activities include field trips to zoos, museums, and outdoor nature preserves.</p>
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Junior Kids -- All week</p>
+    <p>Junior kids are pre-teen in age from 9 to 11. These are week long from Sunday to Saturday at the Bridger Kids' Camp Grounds on Lake Jacomo. Campers must be at the camp ground by noon on Sunday, June 29 and must be picked up Saturday, July 5th by 2 p.m. A second round for this age group will occur in late July.</p>
+    <p><span style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Young Adults Camp -- All week</span></p>
+    <p>The Young Adults are teens from 13 to 16 years of age. The camp will run from Sunday, July 6 to Saturday, July 12 and again from Sunday, August 3 to Saturday, August 9. </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Wanted</p>
+    <p>Kids' Klub will be hiring camp counselors for summer work. For the Tots and Junior kids, counselors must be at least 16 years old and have good academic standing with their high school. Young Adult counselor should be completing their second year of college, preferrebly with a major in secondary education. In addition to counselors, the camps need certified life guards.</p></td>
+  </tr>
+  <tr>
+    <td class="center"><img src="images\hrimg-summercamp.jpg" alt="filler">
+    </td>
+  </tr>
+</table>
+    
+    
+<div id="displayCopyRight">
+</div>
+    
+</body>
+</html>

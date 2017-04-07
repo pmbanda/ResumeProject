@@ -1,0 +1,57 @@
+body    
+{  
+    font-family: Helvetica, "Century Gothic", Arial;
+    font-size: 12pt; 
+            
+}
+p    
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div #body   
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a    
+{ 
+    text-decoration: none;
+    color: black
+}
+
+
+
+table
+{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: #545859;
+        border-style: ridge;
+        border-width: 10px;
+}
+.menu
+{
+        text-align: center;
+        width: 60%
+}
+.menuicon   { width: 23%}
+.menupipe   { width: 1%}
+
+th      
+{ 
+    
+}
+
+tr.stripe   {background-color: #d8d8ce;}
+tr.bolder   {font-weight: bold;}
+
+caption     
+{
+    caption-side: bottom;
+    font-size: italic;
+}
