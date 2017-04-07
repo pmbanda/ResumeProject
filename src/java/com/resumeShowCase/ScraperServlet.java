@@ -23,6 +23,13 @@ import org.jsoup.select.Elements;
  */
 public class ScraperServlet extends HttpServlet 
 {
+    /*
+    *********Debugging Scripts **************
+    // use response for debugging
+                response.setContentType("text/html");
+    //PrintWriter out = response.getWriter();
+                    //out.println(movString + "<br>");
+    */
         
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -47,16 +54,11 @@ public class ScraperServlet extends HttpServlet
                 // Get the movie title
                 Elements movieInfo = documentString.getElementsByClass("titleColumn");
              
-                // use response for debugging
-                response.setContentType("text/html");
+                ArrayList<String> movies = new ArrayList<>(); // Array list of movies in the collection
                 
-                ArrayList<String> movies = new ArrayList<>();
-                
+                // loop through the movie elements 
                 for (int i = 0; i < movieInfo.size(); i++) 
-                {     
-                    //PrintWriter out = response.getWriter();
-                    //out.println(movString + "<br>");
-                    
+                {       
                     movies.add(movieInfo.get(i).toString());
                 }
                

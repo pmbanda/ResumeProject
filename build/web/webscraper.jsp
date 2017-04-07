@@ -19,7 +19,10 @@
     
 </head>
 <body>
-    
+    <%
+        //String movie = (String)request.getAttribute("movies");
+        ArrayList<String> movies = (ArrayList<String>)(request.getAttribute("m"));
+    %>
     <header>
         <div style="text-align: center">
             <img src="oceansidelogo.jpg" width="866" height="259" alt="oceanside logo" style="box-shadow: 10px 10px 15px #888888" />
@@ -54,13 +57,10 @@
     <p></p>
     
     <span id="body"> 
-        <%
-            //String movie = (String)request.getAttribute("movies");
-            ArrayList<String> movies = (ArrayList<String>)(request.getAttribute("m"));
-        
+        <% 
             for(String movie : movies) 
             {%>
-                <%=movie%>
+                <%=movie + "<br>"%>
             <%}
 
         %> 
