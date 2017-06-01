@@ -39,7 +39,7 @@
         %>
     <header>
         <div style="text-align: center" id="body">
-            <img src="images\resumeimages.jpg" height="150" width="200" alt="resume logo" style="box-shadow: 10px 10px 15px #888888" />
+            <a style="background-color: #f9f5f3" href="resume.jsp"><img src="images\resumeimages.jpg" height="150" width="200" alt="resume logo" style="box-shadow: 10px 10px 15px #888888" /></a>
         </div>
     </header>
         
