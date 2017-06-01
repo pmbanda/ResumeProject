@@ -39,7 +39,7 @@
                 styleObject.scrollShadowColor="#a66030";            
         }
         function footerMsg(){
-                var address = "The Denver Opera House<br>900 Market Street<br>Denver, CO 80205"
+                var address = "The Denver Opera House 900 Market Street Denver, CO 80205"
                 footerText.innerHTML = address;
         }
     -->
@@ -80,15 +80,27 @@ table {
 	font-size: 8pt;
 	color: #604020;
 }
+footer {
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 3px;
+}
+div {
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 3px;
+}
 -->
 </style>
 </head>
 <body onload="copyRight();displayDate();scrollColor();footerMsg();">
-<p class="center"><img src="images\extend9-1banner.jpg" alt="Denver Opera Banner" width="696" height="120"></p>
+<p class="center"><img src="images\opera-1banner.jpg" alt="Denver Opera Banner" width="696" height="120"></p>
         
-<p class="center"><img src="images\hrimg-opera.jpg" alt="red divider" width="800" height="4" /></p>
+<p class="center"><img src="images\opera-opera.jpg" alt="red divider" width="800" height="4" /></p>
 <div id="displayCountDown"></div>
-<p class="center"><img src="images\hrimg-opera.jpg" alt="red divider" width="800" height="4" /></p>
+<p class="center"><img src="images\opera-opera.jpg" alt="red divider" width="800" height="4" /></p>
 <p class="center"><span class="titleline"> Come for the atmosphere... Stay for the music!</span></p>
 <div class="blockcenter">
 <p>Welcome to the spectacular Denver Opera House. The Denver Opera House was built in 1882 and is a  Western cultural institution. Our interior takes you back in time, as you enter our newly restored Grand Lobby with many of its original Victorian features. Try to imagine the patrons of the late 19th century streaming into the theater, eager to hear the music and words of Puccini, Rossini, Mozart, Bizet, and Verdi. Come visit Denver's oldest icon of the arts and see a marvelous example of 19th-century Victorian architecture, featuring leather stenciling, an ornate pressed tin ceiling, and a beautiful proscenium stage.</p>
@@ -120,9 +132,16 @@ table {
   </tr>
 </table>
 <p></p>
-    
+ 
 <div id="displayCopyRight">
 </div>
-    <footer id="footerText"></footer>
+
+<div>
+   <a href="webexamples.jsp"><img src="images\back-blue-button.jpg" height="40" width="40"></a> 
+</div>
+
+
+<footer id="footerText"></footer>
+
 </body>
 </html>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    <display-name>My Resume Application</display-name>
+    
+    <description>Web app to show case my portfolio</description>
+    
     <servlet>
         <servlet-name>ScraperServlet</servlet-name>
         <servlet-class>com.resumeShowCase.ScraperServlet</servlet-class>
@@ -12,7 +17,7 @@
         <session-timeout>30</session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>webscraper.jsp</welcome-file>     
+        <welcome-file>resume.jsp</welcome-file>
     </welcome-file-list>
+    
 </web-app>

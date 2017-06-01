@@ -8,6 +8,8 @@ package com.resumeShowCase;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,56 +33,59 @@ public class ScraperServlet extends HttpServlet
                     //out.println(movString + "<br>");
     */
         
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-        // Declare the variable to hold the document
-        Document doc;
-        
-       	// url for the jsp for message relay
-        String url = "/webscraper.jsp";
-        
-            try
-            {
-                // Obtain address of the web to be scraped
-                doc = Jsoup.connect("https://www.imdb.com/chart/top").get();
-			
-                String htmlDoc = doc.toString();// Convert the document to string
-			
-                // Convert the document object to a string using the parser
-                Document documentString = Jsoup.parse(htmlDoc);
-			
-                // Get the movie title
-                Elements movieInfo = documentString.getElementsByClass("titleColumn");
-             
-                ArrayList<String> movies = new ArrayList<>(); // Array list of movies in the collection
-                
-                // loop through the movie elements 
-                for (int i = 0; i < movieInfo.size(); i++) 
-                {       
-                    movies.add(movieInfo.get(i).toString());
-                }
-               
-                request.setAttribute("m", movies);
-                getServletContext().getRequestDispatcher(url).forward(request, response);
-   
-            }
-            catch (Exception e) 
-            {
-		// obtain error if the Web site is not instantiated
-		e.printStackTrace();
-            }
-	
+        doGet(request, response);
     }
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-        doPost(request, response);
+         // Declare the variable to hold the document
+        Document doc;
+        
+       	// url for the jsp for message relay
+        String pageUrl = "/scraperaction.jsp";
+        
+        
+        try
+        {
+            // Obtain address of the web to be scraped
+            doc = Jsoup.connect("https://www.imdb.com/chart/top").get();
+			
+            String htmlDoc = doc.toString();// Convert the document to string
+			
+            // Convert the document object to a string using the parser
+            Document documentString = Jsoup.parse(htmlDoc);
+			
+            // Get the movie title
+            Elements movieInfo = documentString.getElementsByClass("titleColumn");
+                
+            ArrayList<String> moviesCollection = new ArrayList<>(); // Array list of movies in the collection
+                
+            // loop through the movie elements 
+            for (int i = 0; i < movieInfo.size(); i++) 
+            {       
+                moviesCollection.add(movieInfo.get(i).toString());
+            }
+               
+            request.setAttribute("movies", moviesCollection);
+                
+            getServletContext().getRequestDispatcher(pageUrl).forward(request, response);
+   
+            }
+            catch (IOException | ServletException e) 
+            {
+            // obtain error if the Web site is not instantiated
+
+            }
+        }
+
     }
 
 
-}
 

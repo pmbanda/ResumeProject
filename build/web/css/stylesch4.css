@@ -1,29 +1,55 @@
 body    
 {  
-    font-family: Helvetica, "Century Gothic", Arial;
+    font-family: helvetica,times new roman,times,serif;
     font-size: 12pt; 
+    background-color: #f9f5f3;
             
 }
 p    
 {
-    width: 65%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
-
-div #body   
+h1,h2
 {
-    width: 65%;
+    color:red;
+}
+
+#body   
+{
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
-a    
-{ 
+
+
+
+a:link, a:visited {
+    background-color: black;
+    color: green;
+    padding: 14px 25px;
+    text-align: center;
     text-decoration: none;
-    color: black
+    display: inline-block;
+    border-radius: 5px;
+    
 }
 
 
+a:hover, a:active {
+    background-color: grey;
+}
+
+.button{
+    background-color: black;
+    color: red;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+}
 
 table
 {
@@ -34,6 +60,8 @@ table
         border-style: ridge;
         border-width: 10px;
 }
+
+
 .menu
 {
         text-align: center;
@@ -42,9 +70,9 @@ table
 .menuicon   { width: 23%}
 .menupipe   { width: 1%}
 
-th      
+tr      
 { 
-    
+    padding-bottom: 10px;
 }
 
 tr.stripe   {background-color: #d8d8ce;}
@@ -53,5 +81,5 @@ tr.bolder   {font-weight: bold;}
 caption     
 {
     caption-side: bottom;
-    font-size: italic;
+    font-style: italic;
 }
