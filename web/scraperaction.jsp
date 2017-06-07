@@ -35,7 +35,6 @@
         %>
         <% 
             ArrayList<String> movie = (ArrayList<String>)(request.getAttribute("movies"));
-            LocalDate d = LocalDate.now();
         %>
     <header>
         <div style="text-align: center" id="body">
@@ -47,19 +46,24 @@
         
         
         <div id="body">
-            <p style="color: black">
-                <b>Date:: <%= d %></b><br>  
-                <b>Page Visits:: <%= ++count %></b> <br>  
-                <b>Movies Total:: <%= movie.size() %></b>
-            </p>
-        <a href="#top" id="bottom">Bottom</a><br>
+        <pre>
+        
+        <b>Date          <%= new Date() %></b><br>  
+        <b>Page Visits   <%= ++count %></b> <br>  
+        <b>List Size     <%= movie.size() %></b>
+        
+        </pre>
+            
+        <a href="#Top" id="Last value">Last value</a><br>
+        <br>
         <% 
                 for (int i = 0; i < movie.size(); i++) 
                 { %>   
                     <span id="body" style="color: green"> <%=movie.get(i).toString() + "<br>"%></span>
                 <% } 
         %>
-        <a href="#bottom" id="top">Top</a>
+        <br>
+        <a href="#Last value" id="Top">Top</a>
             
         </div> 
         

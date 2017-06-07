@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.util.Date;
 
 public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -44,7 +45,9 @@ public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <title>Contact::Resume</title>\n");
@@ -54,9 +57,10 @@ public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css\\stylesch4.css\" />\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
+      out.write("        \n");
       out.write("        <header>\n");
       out.write("                <div style=\"text-align: center\">\n");
-      out.write("                    <img src=\"images\\resumeimages.jpg\" height=\"150\" width=\"200\" alt=\"resume logo\" style=\"box-shadow: 10px 10px 15px #888888\" />\n");
+      out.write("                    <a style=\"background-color: #f9f5f3\" href=\"resume.jsp\"><img src=\"images\\resumeimages.jpg\" height=\"150\" width=\"200\" alt=\"resume logo\" style=\"box-shadow: 10px 10px 15px #888888\" /></a>\n");
       out.write("                </div>\n");
       out.write("        </header>\n");
       out.write("        \n");
@@ -90,19 +94,20 @@ public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <br>\n");
       out.write("    To send personal mail please fill out the form below<br>\n");
       out.write("    \n");
-      out.write("    <form action=\"mailto:pmbandaft@gmail.com\" name=\"send\" id=\"body\">\n");
-      out.write("                <label style=\"margin-right: 48px\" id=\"body\"><b>User Name:</b></label>\n");
+      out.write("    <form method=\"POST\" id=\"body\">\n");
+      out.write("                <label style=\"margin-right: 27px\"  id=\"body\"><b>User Name:</b></label>\n");
       out.write("                <input type=\"text\" name=\"username\" required=\"\" placeholder=\"User Name*\"/><br>\n");
       out.write("                <br>\n");
-      out.write("                <label style=\"margin-right: 20px\" id=\"body\"><b>Email Address:</b></label>\n");
+      out.write("                <label id=\"body\"><b>Email Address:</b></label>\n");
       out.write("                <input type=\"text\" name=\"email\" required=\"\" placeholder=\"Email*\"/><br>\n");
       out.write("                <br>\n");
       out.write("                <label id=\"body\"><b>Message:</b></label><br>\n");
       out.write("                <textarea rows=\"10\" cols=\"40\" required=\"\" placeholder=\"Type message*\"></textarea><br>\n");
-      out.write("                <input type=\"submit\" value=\"Submit\" />\n");
-      out.write("                <input type=\"reset\" value=\"Reset\" />\n");
+      out.write("                <input  type=\"submit\" value=\"Submit\" style=\"height:30px; width:100px\" />\n");
+      out.write("                <input type=\"reset\" value=\"Reset\" style=\"height:30px; width:100px\"/>\n");
       out.write("    </form>\n");
       out.write("    </p>\n");
+      out.write("    <p></p>\n");
       out.write("</div>     \n");
       out.write("    <footer id=\"body\" style=\"text-align: center\">\n");
       out.write("        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved</small>\n");

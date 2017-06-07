@@ -8,10 +8,11 @@
     
         function displayDate()
         {
-            var today = new Date("january 12, 2017");
-            todayString = today.toDateString(); today.toLocaleString();
+            var today = new Date("May 20, 2017");
+            todayString = today.toDateString(); 
+            today.toLocaleString();
         
-            var daysToKidsCamp = new Date("March 23, 2017");
+            var daysToKidsCamp = new Date("March 23, 2018");
             var daysToGo = daysToKidsCamp.getTime() - today.getTime();
             var days = Math.ceil(daysToGo / (1000*60*60*24));
         
@@ -20,7 +21,7 @@
     
         function copyRight(){
                 
-                today = new Date();
+                var today = new Date("May 20, 2017");
                 var lastModeDate = document.lastModified;
                 var lastModeDate = lastModeDate.substring(0,10);
                 var year = today.getFullYear();
@@ -107,7 +108,7 @@ div {
 <p>Besides a beautiful theater, the Denver Opera House has an art gallery, a gift shop, and the Art's Cafe.  Our art gallery presents eight to 10 exhibitions annually of well-known local, national, and international artists and artisans. After a visit to the art gallery, visit the gift shop, where one can purchase original artwork ranging from paintings, prints, and original hand-crafted pottery, glass, and jewelry. The Art's Cafe is open to the public and is a gathering place where musicians and performers enjoy a break between rehearsals, artists meet to discuss ideas, and friends gather just to relax.</p>
 </div>
 <p></p>
-<table>
+<table border="1">
   <tr>
     <th class="colHead">Art Gallery Hours</th>
     <th class="colHead">Gift Shop Hours</th>
