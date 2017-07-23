@@ -12,10 +12,15 @@ input[type="text"], input[type="email"]
 }
 body    
 {  
-    font-family: helvetica,times new roman,times,serif;
-    font-size: 12pt; 
-    background-color: #f9f5f3;
-            
+    font-family: Lato,"Open Sans",sans-serif,helvetica,times new roman,times,serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.625em;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -x-system-font: none;
+    background-color: #f9f5f3;           
 }
 p    
 {
@@ -94,4 +99,12 @@ caption
 {
     caption-side: bottom;
     font-style: italic;
+}
+
+li{
+    text-decoration: none;
+}
+th
+{
+    text-align: left;
 }

@@ -28,20 +28,20 @@
     <table class="menu" style="border-style: none">
         <tr>
             <th class="menuicon"><a href="#">Resume</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="webexamples.jsp">Web Sites</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="webscraper.jsp">Web Scraper</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="database.jsp">Database</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="contact.jsp">Contact</a></th>
         </tr>
     </table>
     
 <div id="body">   
     
-    <h3 id="body">Resume:: Peter Eugene Mbanda </h3>  
+    <h3 id="body">Peter Eugene Mbanda </h3> 
     
     <h3 id="body">Education</h4>
 
@@ -105,7 +105,7 @@
     
 </div> 
     <footer id="body" style="text-align: center">
-        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved</small>
+        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved -> No animals were harmed during creation of Website</small>
     </footer>
 </body>
 </html>

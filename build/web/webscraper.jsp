@@ -34,13 +34,13 @@
     <table class="menu" style="border-style: none">
         <tr>
             <th class="menuicon"><a href="resume.jsp">Resume</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="webexamples.jsp">Web Sites</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="#">Web Scraper</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="database.jsp">Database</a></th>
-            <td class="menupipe">|</td>
+           
             <th class="menuicon"><a href="contact.jsp">Contact</a></th>
         </tr>
     </table>
@@ -51,12 +51,15 @@
     </p>    
     
     <p>
-        jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting 
+        jSoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting 
         and manipulating data, using the best of DOM, CSS, and jquery-like methods.
     </p>
     <p>
         The following web page contains a web scraper that contains information about top movies from the <span style="color: green">IMDB website</span><br>
-        Click below to see the web scraper in action.<br>
+        Click below to see the web scraper in action.<br><br>
+        <span style="color: red">*</span>
+        <span style="color: purple" id="body">Please use Google Chrome browser for quick effective results by the jSoup Web Scraper.</span>
+    <br>
     </p>
 
  
@@ -69,7 +72,7 @@
    
 </div>
     <footer id="body" style="text-align: center">
-        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved</small>
+        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved -> No animals were harmed during creation of Website</small>
     </footer>
 </body>
 </html>

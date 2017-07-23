@@ -32,13 +32,13 @@
     <table class="menu" style="border-style: none">
         <tr>
             <th class="menuicon"><a href="resume.jsp">Resume</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="webexamples.jsp">Web Sites</a></th>
-            <td class="menupipe">|</td>
+           
             <th class="menuicon"><a href="webscraper.jsp">Web Scraper</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="database.jsp">Database</a></th>
-            <td class="menupipe">|</td>
+            
             <th class="menuicon"><a href="#">Contact</a></th>
         </tr>
     </table>
@@ -49,7 +49,7 @@
     <h3 id="body">Contact information page</h3>
     <p>
     
-        Send Email::<a href="mailto:pmbandaft@gmail.com?subject=website" style="background-color: #f9f5f3; text-decoration: underline;color: blue">Email Link</a><br> 
+        Send Email::<a href="mailto:pmbandaft@gmail.com?subject=ResumeShowCase::website" style="background-color: #f9f5f3; text-decoration: underline;color: blue">Email Link</a><br> 
     For more information on my resume please use the link below.<br> 
     <a target="new" style="background-color: #f9f5f3" href="https://www.linkedin.com/in/peter-eugene-mbanda-8bb89baa/"><img src="images\linkedimage.png" width="100" height="100"
     style="background-color:  #f9f5f3"></a></td>
@@ -63,14 +63,14 @@
     
     
             <form method="POST" id="body" action="SentMail">
-                <label style="margin-right: 27px"  id="body"><b>User Name:</b></label>
-                <input type="text" name="username" required="" placeholder="User Name*"/><br>
+                <label style="margin-right: 28px"  id="body"><b>User Name:</b></label>
+                <input type="text" name="username" required="" placeholder="Name*"/><br>
                 <br>
                 <label id="body"><b>Email Address:</b></label>
                 <input type="email" name="email" required="" placeholder="Email*"/><br>
                 <br>
                 <label id="body"><b>Message:</b></label><br>
-                <textarea name="message" rows="10" cols="40" required="" placeholder="Type message*"></textarea><br>
+                <textarea name="message" rows="10" cols="40" required="" placeholder="Message*"></textarea><br>
                 <input  type="submit" value="Submit" style="height:30px; width:100px" />
                 <input type="reset" value="Reset" style="height:30px; width:100px"/>
             </form>
@@ -79,7 +79,7 @@
     <p></p>
 </div>     
     <footer id="body" style="text-align: center">
-        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved</small>
+        <small>Copyright &#169; 2017 Mansory Inc. All rights reserved -> No animals were harmed during creation of Website</small>
     </footer>
     </body>
 </html>

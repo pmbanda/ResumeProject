@@ -2,9 +2,11 @@
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     
     <display-name>My Resume Application</display-name>
-    
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>mansory@mail.com</param-value>
+    </context-param>
     <description>Web app to show case my portfolio</description>
-    
     <servlet>
         <servlet-name>ScraperServlet</servlet-name>
         <servlet-class>com.resumeShowCase.ScraperServlet</servlet-class>
@@ -18,6 +20,17 @@
     </session-config>
     <welcome-file-list>
         <welcome-file>resume.jsp</welcome-file>
+        <welcome-file>webexamples.jsp</welcome-file>
+        <welcome-file>webscraper.jsp</welcome-file>
+        <welcome-file>contact.jsp</welcome-file>
     </welcome-file-list>
-    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_404.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error_java.jsp</location>
+    </error-page>
+        
 </web-app>

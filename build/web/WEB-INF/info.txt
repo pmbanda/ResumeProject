@@ -1,14 +1,1 @@
 
-Peter Mbanda|pmbandaft@gmail.com|My message has been successfully sent.
-User Mansory|mansory@mail.com|This is a message sent again.
-Malik Haman|malihaman@mail|This is a final confirmation
-courtney ava|ava@mail.com|Apk signing is a must. By signing an apk by your key-store gives you ability to update the app time to time. Remember, donâ??t lose the key-store you will make while signing the apk. You will need that same key-store to sign the app again if you want to publish an update to current version of your app. Otherwise google play would consider it as a different app and would not let you update the previous version causing you loss the previous active user base.
-mail user|mailer@mail|Bound by chain.
-Test Mail|tMail@mail|Watching top model
-Jamal Mansory|mansory@mail.com|This is a successful test.
-Mame Model|mail@mail|This is a mutual respect.
-final trial|final@mail|This is my final mail test.
-User Mansory|mansory@mail.com|This is a servlet info test
-Pompei|pomp@mail|Where champions are made.
-Peter Mansory|mansory@mail.com|Hello peter stop staying on one spot please advance.
-Diane Ekwueme|mail@mail.com|Ralph Lauren.

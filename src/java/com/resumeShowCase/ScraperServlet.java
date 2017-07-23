@@ -71,19 +71,22 @@ public class ScraperServlet extends HttpServlet
             for (int i = 0; i < movieInfo.size(); i++) 
             {       
                 moviesCollection.add(movieInfo.get(i).toString());
+                if(i > 98)
+                    break;
+              
             }
                
             request.setAttribute("movies", moviesCollection);
                 
             getServletContext().getRequestDispatcher(pageUrl).forward(request, response);
    
-            }
-            catch (IOException | ServletException e) 
-            {
-            // obtain error if the Web site is not instantiated
-
-            }
         }
+        catch (IOException | ServletException e) 
+        {
+            request.setAttribute("exception", e);
+
+        }
+      }
 
     }
 
