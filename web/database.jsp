@@ -31,7 +31,7 @@
     <br />
     <table class="menu" style="border-style: none">
         <tr>
-            <th class="menuicon"><a href="resume.jsp">Home</a></th>
+            <th class="menuicon"><a href="resume.jsp">Resume</a></th>
             
             <th class="menuicon"><a href="webexamples.jsp">Web Sites</a></th>
             
@@ -44,13 +44,16 @@
     </table>
     
 <div id="body">  
-    <h3 id="body">Database application page</h3>  
+    <h3 id="body">Pitch Investors Data</h3>  
     <p>
-        Display database objects.
-        
-    <pre id="object">
-        
-    </pre>
+    Pitch Investors is a company comprising several individuals with the aim of executing business strategies
+    based on logistics. Investors can all contribute several ideas and come to conclusion on the best idea based
+    on assessment by the committee members in the group. Assessment also includes calculated risks on the venture.    
+    </p>
+    
+    <p>
+    Below is a sample database displaying each member's stake in the company. Equity is calculated based on
+    individual's stake divided by the total to obtain an individuals percentage ownership.
     </p>
     
     <table border="1">
@@ -128,7 +131,19 @@
     </table>
     
             <p></p>
-            <p></p>
+            <h3  id="body">Rules and Regulations</h3>
+            <p>
+            To review the policies and regulations for the group please click the link below
+            <br>
+            <a href="Pitch Investors Membership.pdf" target="new">Pitch Investors Rules</a>
+            </p>
+            
+             <h3  id="body">Monthly Payments</h3>
+            <p>
+            To review the payments made by members by date please click the link below
+            <br>
+            <a href="data.pdf" target="new">Pitch Investors Data</a>
+            </p>
     
 </div> 
     <footer id="body" style="text-align: center">
